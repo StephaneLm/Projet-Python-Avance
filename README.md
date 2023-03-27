@@ -19,7 +19,7 @@ Une fois l'application chargée, utiliser le panneau latéral pour filtrer les p
 Si aucun produit ne correspond aux critères de filtrage, un message "Aucun produit n'a été trouvé." s'affichera à la place du tableau de résultats.
 
 
-# Test unitaire
+# Tests unitaires
 
 Pour le test unitaire on le lance avec la commande python suivante : python test_scraper.py
 Avec les fonctions du fichier nous testons que le scraper fonctionne bien, si nous pouvons bien fermer la connexion à la base de donnée, si la collection est vide et si les produits existe bien.
