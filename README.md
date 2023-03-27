@@ -17,3 +17,9 @@ Pour exécuter le programme, utilisez la commande streamlit ---> streamlit run s
 Une fois l'application chargée, utiliser le panneau latéral pour filtrer les produits en fonction du nom et du prix. Les résultats filtrés s'affichent dans un tableau sous le panneau latéral.
 
 Si aucun produit ne correspond aux critères de filtrage, un message "Aucun produit n'a été trouvé." s'affichera à la place du tableau de résultats.
+
+
+#Test unitaire
+
+Pour le test unitaire on le lance avec la commande python suivante : python test_scraper.py
+Avec les fonctions du fichier nous testons que le scraper fonctionne bien, si nous pouvons bien fermer la connexion à la base de donnée, si la collection est vide et si les produits existe bien.
