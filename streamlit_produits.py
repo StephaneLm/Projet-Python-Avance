@@ -27,7 +27,7 @@ for product in collection.find():
     data.append({'Nom': name, 'Prix': price})
     
 df = px.data.tips()
-df = px.histogram(data, x='Prix', nbins=20, title='Répartition des prix')
+df = px.histogram(data, x='Prix', nbins=20, title='Répartition des prix',color_discrete_sequence=['red'])
 st.plotly_chart(df)
 
 
