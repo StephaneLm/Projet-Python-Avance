@@ -22,6 +22,8 @@ for produit in produits:
     data = {'name': name, 'price': price}
     collection.insert_one(data)
     
+    
+    
 #On reprends ce qui a été fait au dessus pour faire la fonction de test unitaire
 def scrape(url):
     # création d'une session pour gérer les cookies
@@ -31,10 +33,8 @@ def scrape(url):
     response = session.get(url, headers=headers)
     soup = BeautifulSoup(response.content, 'html.parser')
 
-    # recherche des éléments HTML appropriés
     products = soup.find_all('div', class_='manhattan--content--1KpBbUi')
 
-    # stockage des données dans un tableau
     data = []
     for product in products:
         name = product.find('h1', class_='manhattan--titleText--WccSjUS').text.strip()
