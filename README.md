@@ -4,7 +4,7 @@
 # Scraper Produits:
 Ce code Python utilise la bibliothèque BeautifulSoup, la bibliothèque requests et la base de données MongoDB pour extraire les noms et les prix des ordinateurs portables à partir d'un site Web.
 
-Pour exécuter le programme, il suffit de lancer le script scraper_produits.py. Le script extrait les données à partir du site web Aliexpress regroupant des articles divers et variées et les stocke dans la base de données MongoDB (on peux voir la base sur MongoDBCompass plus facilement).
+Pour exécuter le programme, il suffit de lancer le script avec la commande python ---> python scraper_produits.py. Le script extrait les données à partir du site web Aliexpress regroupant des articles divers et variées et les stocke dans la base de données MongoDB (on peux voir la base sur MongoDBCompass plus facilement).
 
 Les données sont stockées dans la collection ordinateur_portable de la base de données pc.
 
